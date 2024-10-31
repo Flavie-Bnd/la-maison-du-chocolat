@@ -1,0 +1,273 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    margin : 0 auto;
+    padding: 0;
+}
+
+.crete-round-regular {
+    font-family: "Crete Round", serif;
+    font-style: normal;
+}
+
+.inter {
+    font-family: "Inter", sans-serif;
+}
+
+/* CSS GENERAL --------------------------- */
+:root{
+    --primary-color : #444444;
+    --second-color : #E83B8A;
+    --background-color : #ececec;
+    --primary-font : "Crete Round";
+    --second-font : "Inter";
+}
+
+h1{
+color : #fff;
+font-size: 2em;
+}
+
+h1, h2, h3{
+    font-family: var(--second-font);
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+h2, h3, p, a, li, label{
+    font-family: var(--second-font);
+    color : var(--primary-color)
+}
+
+span{
+    color : var(--second-color)
+}
+
+img {
+    max-width: 100%;
+}
+
+li, a {
+    list-style : none;
+    text-decoration: none;
+}
+
+p, a{
+    font-size : 0.6em;
+}
+
+p.logo {
+    font-family : var(--primary-font);
+    font-size : 2em;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin: 20px;
+}
+/* HEADER -------------------------------- */
+header {
+    text-align : center;
+    padding: 10px;
+    margin : 10px 0;
+}
+header nav ul{
+    display : flex;
+    justify-content: center;
+    padding: 0;
+}
+
+header nav ul li a {
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 5px;
+}
+
+header a:hover{
+    transition: 0.4s ease;
+    color: var(--second-color);
+}
+/* HERO --------------------------------- */
+
+#hero {
+    display : flex;
+    flex-direction : column;
+    justify-content : center;
+    align-items : center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(./imgs/main.jpg);
+    background-repeat: no-repeat;
+    background-size : 260%;
+    background-position: bottom;
+    height: 40vh;
+    padding : 20px;
+    text-align : center;
+}
+#hero h1{
+    max-width: 100%;
+    width: 400px;
+}
+#hero a{
+    color : #fff;
+    border : 1px solid var(--second-font);
+    border-radius : 4px;
+    background-color : var(--second-color);
+    padding : 10px 26px;
+    margin-top : 30px;
+    
+}
+
+#hero a:hover{
+    transition: 0.4s ease;
+    background-color: var(--primary-color);
+}
+/* VALEURS ----------------------------- */
+
+.value {
+    display : flex;
+    flex-flow : row wrap;
+    align-items : center;
+    justify-content : center;
+    padding : 20px;
+}
+
+.container {
+    display : flex;
+    flex-direction : column;
+    justify-content: center;
+    align-items : center;
+    margin : 30px;
+    width: 300px;
+    text-align : center;   
+}
+
+
+.container h2{
+    margin : 10px 0;
+}
+
+/* INFOS PRATIQUE ---------------------- */
+
+.infos {
+    display : flex;
+    flex-wrap : wrap;
+    justify-content: center;
+    align-items : center;
+    background-color : var(--background-color);
+    padding : 40px 0;
+
+}
+
+.card {
+    display : flex;
+    background-repeat: no-repeat;
+    background-size : cover;
+    background-position: right;
+    width: 90vw;
+    height: 250px;   
+    margin: 10px;
+    border-radius : 20px;
+}
+
+.card-text {
+    display : flex;
+    flex-direction : column;
+    align-items : center;
+    justify-content : center;
+    width: 40vw;
+    height: 250px;
+    background-color: #ffffffef;
+    text-align: center;
+    padding : 10px;
+    border-radius : 20px 0 0 20px;
+}
+
+.card-text h3 {
+    border-bottom: 1px solid #44444481;
+    width: 90%;
+    padding-bottom: 20px;
+
+}
+.card-text a{
+    color : #fff;
+    border : 1px solid var(--second-font);
+    border-radius : 4px;
+    background-color : var(--second-color);
+    padding : 10px 26px;
+}
+
+.card-text a:hover{
+    transition: 0.4s ease;
+    background-color: var(--primary-color);
+}
+
+.card-text p{
+    font-style: italic;
+}
+.first-card {
+    background-image : url(./imgs/article-image-1.jpg);
+}
+
+.second-card {
+    background-image : url(./imgs/article-image-2.jpg)
+}
+
+/* CONTACT ------------------------------- */
+
+.contact {
+    display : flex;
+    flex-direction : column;
+    align-items : center;
+    justify-content : center;
+    margin : 30px;
+    text-align: center;
+}
+.contact h3{
+    border-bottom : 1px solid #63b4ff;
+    width: 60%;
+    padding : 20px;
+}
+.contact p{
+    margin-bottom : 30px;
+}
+.form-group {
+    margin-bottom : 20px;
+}
+
+input[type="text"], input[type="email"] {
+    padding: 8px;
+    margin-left : 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+    color : #fff;
+    border : 1px solid var(--second-font);
+    border-radius : 4px;
+    background-color : var(--second-color);
+    padding : 10px;
+}
+
+.button-submit:hover{
+    transition: 0.4s ease;
+    background-color: var(--primary-color);
+}
+/* FOOTER -------------------------- */
+
+footer {
+    display : flex;
+    flex-direction :column;
+    align-items : center;
+    justify-content: center;
+    background-color: var(--primary-color);
+    padding: 20px;
+}
+
+footer p{
+    color: #fff;
+    text-align: center;
+}
+
+footer .copy{
+    font-size: 1em;
+    opacity: 20%;
+}

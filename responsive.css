@@ -1,0 +1,72 @@
+/* RESPONSIVE MOBILE CSS -------------------------------- */
+@media (min-width : 600px) {
+
+/* GENERAL */
+p, a {
+    font-size: 1em;
+}
+
+}
+
+@media (min-width : 1000px) {
+
+
+/* HEADER */
+header {
+    display : flex; 
+    justify-content: center;
+    align-items: center;
+}
+header nav {
+    align-self: flex-end;
+}
+header nav ul li a{
+    padding-right : 20px;
+}
+
+/* HERO */
+#hero {
+    height: 70vh;
+    background-size: cover;
+}
+
+
+/* VALEURS */
+.container {
+    padding: 40px;
+    border-radius: 140px;
+}
+.container:hover {
+    background-color: #ecececa1;
+    transition: 0.4s ease; 
+}
+
+
+/* INFOS PRATIQUE */
+.card {
+    width: 38vw;
+}
+.card-text {
+    width: 18vw;
+}
+
+.card, .card-text {
+    height: 300px;
+} 
+
+/*  CONTACT */
+
+.contact h3{
+    width: 35%;
+}
+
+.form-group {
+    margin: 0 auto;
+    margin-right: 20px;
+}
+form{
+    display: flex;
+    align-items: center;
+}
+
+}
